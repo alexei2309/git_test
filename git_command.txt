@@ -1,0 +1,124 @@
+1. скачиваем git
+2. задаем глобальные параметры
+   git config --global user.name "Alexey B
+   git config --global user.email "********@mail.ru"
+провер€ем, что параметры установлены
+git config --list
+
+3. создаем каталог, открывает git bash
+   переходим в каталог, например, 
+  cd E:\git
+  создаем каталог:
+  git init
+
+добавл€етс€ как скрыта€ папка. 
+≈сли выходит ошибка Reinitialized existing Git repository in E:/git/.git/ - каталог уже создан и сейчас идет попытка создать еще раз.
+
+
+!!! если каталог уже создан, то дл€ работы с гит необходимо перейти в правильный каталог
+
+4. –абота с файлами
+  файлы могут быть отслеживаемые и не отслеживаемые. ≈сли просто добавить в каталог, то файлы будет не отслеживаемые
+ѕеред тем что то делать надо проверить статус:
+git status # проверка
+
+On branch master #  в какой ветке находимс€, в этом случае в ветке мастера
+
+No commits yet
+
+Untracked files: #  показывает не отслеживаемые файлы
+  (use "git add <file>..." to include in what will be committed) #   и даже подсказывает команду
+        e1Zo43MkZi8.jpg #  тестовые файлы которые добавил в директорию
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+„тобы добавить эти файлы, делаем
+git add . # точка означает, что добавл€ем все
+
+делаем проерку статуса. 
+
+ƒалее если в файл вноим какие-то изменени€ и делаем 
+git status
+
+
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   e1Zo43MkZi8.jpg
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+«десь уже показывает, что есть модифицированные файлы.
+„тобы добавить файл, делаем
+git add  test.txt
+
+и делаем проверку статуса.
+
+≈сли внести еще изменение в файл и сделать проверку статуса
+git status
+
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   e1Zo43MkZi8.jpg
+        new file:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+увидим, что файл test.txt есть как новый и как модифицированный
+
+git add .
+
+git status
+провер€ем статус
+
+
+5. ќтправка на удаленную сторону, например, сайт гитхаб
+git remote add origin https://github
+
+git push -u origin master
+ввести логин и пароль 
+
+6. ƒл€ выкачивани€
+git clone и указываетс€ ресурс
+
+
+редактор Vim
+i - режим ввода текста
+Esc - возвращает в обычный режим
+
+:wq потом Enter - сохранение и выход
+
+:qa! потом Enter - без сохранени€ и выход
+
+
+
+7. команды
+git init
+git add .
+git commit -m "comment"
+
+git remote add origin https://github.com/alexei2309/git_test.git
+git push -u origin master
+
+#выкачать себе гит, выбрав директорию
+git clone https://github.com/alexei2309/git_test.git
+
+
+
+
+

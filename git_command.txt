@@ -118,6 +118,9 @@ git push -u origin master
 #выкачать себе гит, выбрав директорию
 git clone https://github.com/alexei2309/git_test.git
 
+каждый день начинается с команды - скачиваем все обновления
+git pull
+
 
 
 

@@ -121,6 +121,13 @@ git clone https://github.com/alexei2309/git_test.git
 каждый день начинается с команды - скачиваем все обновления
 git pull
 
+8. alias
+Найти config - User - git.config
+создать раздел
+
+[alias]
+	s = status --short
+
 
 
 

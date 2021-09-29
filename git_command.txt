@@ -130,5 +130,6 @@ git pull
 
 
 
-
+9. Откать изменения в определенном файле, например, test.txt
+git checkout -- test.txt
 

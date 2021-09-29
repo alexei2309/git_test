@@ -142,4 +142,8 @@ git reset -- test.txt
 он выпадет из add и дальше уже сделать
 git checkout -- test.txt
 
+11. откать жестко на 1 коммит назад
+git reset --hard HEAD^1
+
+
 

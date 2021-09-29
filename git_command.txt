@@ -136,4 +136,10 @@ git checkout -- test.txt
 удалить для всех файлов
 git checkout .
 
+10. Откатить после команды git add . на примере файла test.txt
+git reset -- test.txt
+
+он выпадет из add и дальше уже сделать
+git checkout -- test.txt
+
 

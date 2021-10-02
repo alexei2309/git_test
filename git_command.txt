@@ -152,6 +152,16 @@ git reset -- test.txt - отменяет  до add
 
 git checkout -- test.txt - отменяет изменения
 
+11. работа с ветками
+git branch # посмотреть все ветки и * показывает текущую
+git branch -v # показывает последний commit для этой ветки
+
+git branch develop # создание новой ветки develop
+
+git checkout develop # перейти в ветку develop
+
+Между ветками можно переключаться, в git log обращаться внимание на HEAD - показывет текущее нахождение
+
 
 
 

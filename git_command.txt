@@ -146,6 +146,12 @@ git checkout -- test.txt
 git reset --hard HEAD^1
 
 если откаться до состояния перед commit, чтобы принять решение по изменения
-git reset --soft HEAD^1
+git reset --soft HEAD^1 - отменяет commit
+
+git reset -- test.txt - отменяет  до add 
+
+git checkout -- test.txt - отменяет изменения
+
+
 
 

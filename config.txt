@@ -1,3 +1,0 @@
-key=pass
-secret=code
-secret2=code

@@ -201,3 +201,14 @@ git rm --cached `git ls-files -i --exclude-from=.gitignore`
 
 Теперь результат команды git rm нужно зафиксировать коммитом.
 git commit -m'removed gitignored files'
+
+13. Посмотреть другой commit
+! надо commit всех изменений
+!! проверить в какой ветке, чтобы вернуться в нужную ветку  
+$git branch
+
+Чтобы потом вернуться в послдений commit, 
+потом набрать git checkout <Имя ветки>, например, git checkout  master
+
+Для перемещений в любой commit:
+git checkout <Хеш коммита>

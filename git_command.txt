@@ -86,6 +86,9 @@ git add .
 git status
 провер€ем статус
 
+посмотреть текущие изменени€
+git diff
+
 
 5. ќтправка на удаленную сторону, например, сайт гитхаб
 git remote add origin https://github
@@ -174,7 +177,15 @@ git push --set-upstream origin dev
 
 
 #удаление ветки dev, наход€сь в другой например master
-git branch -d dev 
+git branch -D dev 
+
+----
+удаление веток
+
+git branch -d branchname == удаление локальной уже слитой ветки
+git branch -D branchname == принудительное удаление локальной ветки
+git push origin :branchname == удаление ветки с центрального репозитори€
+----
 
 
 12. gitignore
@@ -212,3 +223,11 @@ $git branch
 
 ƒл€ перемещений в любой commit:
 git checkout <’еш коммита>
+
+14. ѕосмотреть изменени€ commit
+показываеет изменени€, внесенные указанным коммитом.
+git show <коммит>
+
+просмотреть сразу несколько коммитов
+$ git log -p
+$ git log -p -2  
